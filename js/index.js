@@ -9,7 +9,13 @@ const init = () => {
   $form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    jsConfetti.addConfetti();
+    // jsConfetti.addConfetti();
+    jsConfetti.addConfetti({
+      emojis: ["🧦","👗", "👘", "🥻", "🩴", "🩱", "🩲", "🩳", "👙", "👚", "👛", "👜", "👝", "🎒", "👞", "👟", "🥾"],
+      emojiSize: 50,
+      confettiNumber: 100,
+    });
+
   });
 };
 
